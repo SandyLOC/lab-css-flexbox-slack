@@ -8,3 +8,217 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+:root {
+    --purple: #540B51;
+    --blue: #4285F4;
+    --ivory: #F3EAE2;
+    --black: #191817;
+    --yellow: #ECB12F;
+    --grey: #454245;
+    --links-blue: #2E71A6;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+    background-color: var(--purple);
+    padding: 2em;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+header {
+    padding-top: 3em;
+    background-color: var(--purple);
+}
+h1 {
+    font-size: 4.5rem;
+    margin-top: 0;
+}
+h3 {
+    font-size: 3.5rem;
+}
+a {
+    text-decoration: none;
+}
+.landing {
+    text-align: center;
+    background-image: url("../images/background-singup.png");
+    background-position: center;
+    padding: 0 2rem 1rem;
+    color: white;
+}
+.landing p {
+    font-size: 2em;
+}
+.landing span:first-child {
+    color: var(--yellow);
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 12rem;
+}
+button {
+    padding: 24px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.signup-email {
+    background-color: white;
+    color: var(--purple);
+}
+.signup-google {
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    background-color: #4285F4;
+    color: white;
+}
+.signup-google img {
+    max-height: 2em;
+}
+.product {
+    overflow: hidden;
+}
+.product img{
+    margin: auto 80px -80px auto;
+}
+.companies {
+    text-align: center;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    padding: 2em 1em;
+    background-color: #F3EAE2;
+}
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    height: 9em;
+    align-items: center;
+    justify-content: space-around;
+}
+.general {
+    background-color: var(--ivory);
+}
+.general-text {
+    font-size: 2.1rem;
+    padding: 1em;
+}
+.flexibility {
+    display: flex;
+    flex-direction: column;
+}
+.block2 {
+    order: -1;
+}
+.tools, .flexibility{
+    padding: 2.2em 0;
+}
+.padding {
+    padding-top: 1.2rem;
+}
+.padding .buttons {
+    margin-bottom: 4rem;
+}
+.purple-button{
+    background-color: var(--purple);
+    border-color: white;
+    color: white;
+}
+.white-button {
+    background-color: white;;
+    border-color: var(--purple);
+    color: var(--purple);
+}
+.metrics {
+    text-align: center;
+    padding: 2rem 12rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.metrics span {
+    color: var(--purple);
+    font-size: 5rem;
+}
+.metrics li {
+    margin: 4rem 0;
+}
+footer {
+    padding: 3rem 2rem;
+    font-size: 1.4rem;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    gap: 2.6rem;
+    line-height: 2.2;
+    margin: 2rem 0;
+}
+
+.nav-links li:first-of-type {
+    font-weight: 600;
+}
+.status {
+    margin: 3rem 0;
+    line-height: 3;
+    font-weight: 600;
+}
+.socials{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    margin: 3rem 0;
+}
+#download {
+    color: var(--links-blue);
+}
+@media (max-width: 768px){
+    body {
+        max-width: 768px;
+    }
+    nav {
+        display: flex;
+        align-content: stretch;
+        justify-content: space-between;
+    }
+    .slack-logo img {
+        max-height: 2em;
+    }
+    .menu {
+        display: none;
+    }
+    img {
+        max-width: 768px;
+    }
+    .logos img{
+        max-width: auto;
+        max-height: 2em;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    body {
+        max-width: 1024px;
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1440px){
+    body {
+        max-width: 1440px;
+    }
+}
+
+@media (min-width: 1440px){
+
+}
