@@ -38,7 +38,6 @@ header {
 }
 h1 {
     font-size: 4.5rem;
-    margin-top: 0;
 }
 h3 {
     font-size: 3.5rem;
@@ -46,13 +45,15 @@ h3 {
 a {
     text-decoration: none;
 }
+.slack-logo img {
+    max-height: 2.5rem;
+}
 .menu-buttons button{
     background: none;
     border: none;
     padding: 0 15px;
 }
 .landing {
-    text-align: center;
     padding: 0 2rem 1rem;
     color: white;
 }
@@ -69,7 +70,7 @@ a {
     height: 12rem;
 }
 button {
-    padding: 24px;
+    padding: 1.7rem;
     border-radius: 8px;
     font-size: 1.5rem;
     font-weight: 600;
@@ -89,14 +90,12 @@ button {
 .signup-google img {
     max-height: 2em;
     background-color: white;
-    justify-self: flex-start;
+}
+.signup-google span {
+    margin: 0 auto;
 }
 .product {
     overflow: hidden;
-}
-.product img{
-    min-width: 1100px;
-    margin: auto -120px -125px -60px;
 }
 .companies {
     text-align: center;
@@ -129,7 +128,10 @@ button {
 }
 .block2 {
     order: -1;
+    display: flex;
+    justify-content: flex-end;
 }
+
 .tools, .flexibility{
     padding: 2.2em 0;
 }
@@ -198,19 +200,22 @@ footer {
     nav {
 
     }
-    .slack-logo img {
-        max-height: 2em;
+    h1 {
+        margin-top: 0;
     }
     .menu {
         display: none;
     }
     img {
-        max-width: 48rem;
+        max-width: 48em;
     }
-    .logos img{
-        max-height: 2em;
+    .landing {
+        text-align: center;
     }
-    
+    .product img{
+        width: 60rem;
+        margin: auto -130px -80px -30px;
+    }
     .welcome {
         text-align: center;
         background-color: var(--purple);
@@ -224,19 +229,73 @@ footer {
     body {
         max-width: 1024px;
     }
+    header {
+        display: flex;
+        padding-top: 0;
+        align-items: center;
+    }
+    h1 {
+        font-size: 7rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
     h3 {
         font-size: 3.2rem;
     }
     .landing {
-        text-align: center;
+        max-width: 55%;
         background-image: url("../images/background-singup.png");
         background-size: cover;
         background-repeat: no-repeat;
         color: white;
     }
+    .landing span:first-child {
+        font-weight: 600;
+    }
     button {
         font-size: 1.2rem;
     }
+    .product img{
+        max-width: 50rem;
+    }
+    .general-text {
+        font-size: 1.5rem;
+        padding: 1rem 10rem 1rem 10rem;
+        line-height: 1.4;
+    }
+    .connectedness {
+        background-image: url("../images/connectedness.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        max-width: 55em;
+        height: 33rem;
+    }
+    .connectedness img {
+        display: none
+    }
+    .block2 {
+        align-self: flex-end;
+        width: 100vw;
+        background-image: url("../images/flexibility.png");
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+        height: 33rem;
+    }
+    .block2 img {
+        display: none;
+    }
+    .tools-img {
+        background-image: url("../images/speed.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 33rem;
+    }
+    .tools-img img {
+        display: none;
+    }
+        
     .welcome {
         text-align: center;
         background-color: var(--purple);
@@ -246,8 +305,11 @@ footer {
     .menu {
         display: none;
     }
+    .menu-buttons img{
+        height: 2rem;
+    }
     img {
-        max-width: 1024px;
+        max-width: 55em;
     }
     .companies {
         font-size: 1.5em;
@@ -260,10 +322,6 @@ footer {
     }
     .logos img{
         max-height: 3rem;
-    }
-    .general-text {
-        font-size: 1.7rem;
-        padding: 1rem 8rem;
     }
     .teams {
         text-align: center;
@@ -291,9 +349,16 @@ footer {
         font-weight: 700;
         text-align: left;
     }
+    .metrics p {
+        margin: 0 auto;
+        line-height: 1.2;
+    }
     footer {
         padding: 3rem 2rem;
-        font-size: 1.2rem;
+    }
+    .nav-links {
+        line-height: 3;
+        font-size: 1.1rem;
     }
     .status {
         display: flex;
