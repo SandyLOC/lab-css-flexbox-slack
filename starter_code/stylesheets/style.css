@@ -22,6 +22,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 nav {
+    display: flex;
+    justify-content: space-between;
     background-color: var(--purple);
     padding: 2em;
 }
@@ -31,7 +33,7 @@ ul {
 }
 
 header {
-    padding-top: 3em;
+    padding-top: 2.5em;
     background-color: var(--purple);
 }
 h1 {
@@ -46,12 +48,11 @@ a {
 }
 .menu-buttons button{
     background: none;
-    border: none
+    border: none;
+    padding: 0 15px;
 }
 .landing {
     text-align: center;
-    background-image: url("../images/background-singup.png");
-    background-position: center;
     padding: 0 2rem 1rem;
     color: white;
 }
@@ -82,13 +83,13 @@ button {
     padding: 14px;
     display: flex;
     align-items: center;
-    gap: 7em;
     background-color: #4285F4;
     color: white;
 }
 .signup-google img {
     max-height: 2em;
     background-color: white;
+    justify-self: flex-start;
 }
 .product {
     overflow: hidden;
@@ -111,6 +112,10 @@ button {
     align-items: center;
     justify-content: space-around;
 }
+.logos img{
+    max-width: auto;
+    max-height: 4rem;
+}
 .general {
     background-color: var(--ivory);
 }
@@ -128,10 +133,7 @@ button {
 .tools, .flexibility{
     padding: 2.2em 0;
 }
-.padding {
-    padding-top: 1.2rem;
-}
-.padding .buttons {
+.welcome .buttons {
     margin-bottom: 4rem;
 }
 .purple-button{
@@ -191,12 +193,10 @@ footer {
 }
 @media (max-width: 768px){
     body {
-        max-width: 768px;
+        max-width: 48rem;
     }
     nav {
-        display: flex;
-        align-content: stretch;
-        justify-content: space-between;
+
     }
     .slack-logo img {
         max-height: 2em;
@@ -205,11 +205,17 @@ footer {
         display: none;
     }
     img {
-        max-width: 768px;
+        max-width: 48rem;
     }
     .logos img{
-        max-width: auto;
         max-height: 2em;
+    }
+    
+    .welcome {
+        text-align: center;
+        background-color: var(--purple);
+        padding: 1rem 2rem;
+        color: white;
     }
 
 }
@@ -217,6 +223,94 @@ footer {
 @media (min-width: 769px) and (max-width: 1024px){
     body {
         max-width: 1024px;
+    }
+    h3 {
+        font-size: 3.2rem;
+    }
+    .landing {
+        text-align: center;
+        background-image: url("../images/background-singup.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+    }
+    button {
+        font-size: 1.2rem;
+    }
+    .welcome {
+        text-align: center;
+        background-color: var(--purple);
+        color: white;
+        padding: 1.2rem 7rem;
+    }
+    .menu {
+        display: none;
+    }
+    img {
+        max-width: 1024px;
+    }
+    .companies {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    .logos {
+        padding-top: 2rem;
+        align-content: flex-start;
+        height: 9rem;
+    }
+    .logos img{
+        max-height: 3rem;
+    }
+    .general-text {
+        font-size: 1.7rem;
+        padding: 1rem 8rem;
+    }
+    .teams {
+        text-align: center;
+        font-size: 1.4rem;
+        padding: 1rem 3rem;
+    }
+    .teams h3 {
+        font-size: 2.5rem;
+    }
+    .teams .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 5rem;
+        gap: 2.4rem;
+    }
+    .teams button {
+        padding: 10px 40px;
+    }
+    .metrics {
+        display: flex;
+        gap: 5rem;
+        padding: 2rem 1.2rem;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-align: left;
+    }
+    footer {
+        padding: 3rem 2rem;
+        font-size: 1.2rem;
+    }
+    .status {
+        display: flex;
+        justify-content: space-between;
+        margin: 3rem 0.5rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    .socials{
+        display: flex;
+        justify-content: space-between;
+        max-width: 50%;
+        font-size: 1.8rem;
+        margin: 3rem 0;
+    }
+    small {
+        font-size: 1rem;
     }
 
 }
