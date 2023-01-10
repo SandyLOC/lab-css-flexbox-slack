@@ -81,7 +81,7 @@ button {
     color: var(--purple);
 }
 .signup-google {
-    padding: 14px;
+    padding: 1.1rem;
     display: flex;
     align-items: center;
     background-color: #4285F4;
@@ -117,6 +117,7 @@ button {
 }
 .general {
     background-color: var(--ivory);
+    display: flex;
 }
 .general-text {
     font-size: 2.1rem;
@@ -124,12 +125,6 @@ button {
 }
 .flexibility {
     display: flex;
-    flex-direction: column;
-}
-.block2 {
-    order: -1;
-    display: flex;
-    justify-content: flex-end;
 }
 
 .tools, .flexibility{
@@ -150,6 +145,7 @@ button {
 }
 .teams {
     text-align: center;
+    min-width: 100vw;
 }
 .metrics {
     padding: 2rem 12rem;
@@ -216,6 +212,15 @@ footer {
         width: 60rem;
         margin: auto -130px -80px -30px;
     }
+    .general {
+        flex-wrap: wrap;
+    }
+    .flexibility {
+        flex-direction: column;
+    }
+    .block2 {
+        order: -1;
+    }
     .welcome {
         text-align: center;
         background-color: var(--purple);
@@ -224,24 +229,9 @@ footer {
     }
 
 }
-
-@media (min-width: 769px) and (max-width: 1024px){
-    body {
-        max-width: 1024px;
-    }
-    header {
-        display: flex;
-        padding-top: 0;
-        align-items: center;
-    }
-    h1 {
-        font-size: 7rem;
-    }
-    h2 {
-        font-size: 2.5rem;
-    }
-    h3 {
-        font-size: 3.2rem;
+@media (min-width: 769px) {
+    .menu {
+        display: none;
     }
     .landing {
         max-width: 55%;
@@ -249,6 +239,7 @@ footer {
         background-size: cover;
         background-repeat: no-repeat;
         color: white;
+        padding: 0 2rem 10rem;
     }
     .landing span:first-child {
         font-weight: 600;
@@ -259,29 +250,25 @@ footer {
     .product img{
         max-width: 50rem;
     }
-    .general-text {
-        font-size: 1.5rem;
-        padding: 1rem 10rem 1rem 10rem;
-        line-height: 1.4;
+    header {
+        display: flex;
+        padding-top: 0;
+        align-items: center;
     }
     .connectedness {
         background-image: url("../images/connectedness.png");
         background-size: contain;
         background-repeat: no-repeat;
-        max-width: 55em;
-        height: 33rem;
     }
     .connectedness img {
         display: none
     }
     .block2 {
         align-self: flex-end;
-        width: 100vw;
         background-image: url("../images/flexibility.png");
         background-size: contain;
         background-position: right;
         background-repeat: no-repeat;
-        height: 33rem;
     }
     .block2 img {
         display: none;
@@ -290,46 +277,9 @@ footer {
         background-image: url("../images/speed.png");
         background-size: contain;
         background-repeat: no-repeat;
-        height: 33rem;
     }
     .tools-img img {
         display: none;
-    }
-        
-    .welcome {
-        text-align: center;
-        background-color: var(--purple);
-        color: white;
-        padding: 1.2rem 7rem;
-    }
-    .menu {
-        display: none;
-    }
-    .menu-buttons img{
-        height: 2rem;
-    }
-    img {
-        max-width: 55em;
-    }
-    .companies {
-        font-size: 1.5em;
-        font-weight: 600;
-    }
-    .logos {
-        padding-top: 2rem;
-        align-content: flex-start;
-        height: 9rem;
-    }
-    .logos img{
-        max-height: 3rem;
-    }
-    .teams {
-        text-align: center;
-        font-size: 1.4rem;
-        padding: 1rem 3rem;
-    }
-    .teams h3 {
-        font-size: 2.5rem;
     }
     .teams .buttons {
         display: flex;
@@ -353,12 +303,12 @@ footer {
         margin: 0 auto;
         line-height: 1.2;
     }
-    footer {
-        padding: 3rem 2rem;
-    }
-    .nav-links {
-        line-height: 3;
-        font-size: 1.1rem;
+    
+    .welcome {
+        text-align: center;
+        background-color: var(--purple);
+        color: white;
+        padding: 1.2rem 7rem;
     }
     .status {
         display: flex;
@@ -370,19 +320,215 @@ footer {
     .socials{
         display: flex;
         justify-content: space-between;
-        max-width: 50%;
+        max-width: 35%;
         font-size: 1.8rem;
         margin: 3rem 0;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    body {
+        max-width: 1024px;
+    }
+    h1 {
+        font-size: 7rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 3.2rem;
+    }
+    .general-text {
+        font-size: 1.5rem;
+        padding: 1rem 10rem 1rem 10rem;
+        line-height: 1.4;
+    }
+    .general {
+        flex-wrap: wrap;
+    }
+    .flexibility {
+        flex-direction: column;
+    }
+       
+    .menu-buttons img{
+        height: 2rem;
+    }
+    img {
+        max-width: 55em;
+    }
+    .companies {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    .logos {
+        padding-top: 2rem;
+        align-content: flex-start;
+        height: 9rem;
+    }
+    .logos img{
+        max-height: 3rem;
+    }
+    .connectedness {
+        height: 33rem;
+        width: 100vw;
+    }
+    .connectedness img {
+        display: none
+    }
+    .block2 {
+        order: -1;
+        align-self: flex-end;
+        width: 100vw;
+        height: 50vh;
+    }
+    .block2 img {
+        display: none;
+    }
+    .tools-img {
+        width: 100vw;
+        height: 33rem;
+    }
+    .teams {
+        text-align: center;
+        font-size: 1.4rem;
+        padding: 1rem 3rem;
+    }
+    .teams h3 {
+        font-size: 2.5rem;
+    }
+    footer {
+        padding: 3rem 2rem;
+    }
+    .nav-links {
+        line-height: 3;
+        font-size: 1.1rem;
     }
     small {
         font-size: 1rem;
     }
+
 
 }
 
 @media (min-width: 1025px) and (max-width: 1440px){
     body {
         max-width: 1440px;
+    }
+    nav {
+        justify-content: space-between;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    nav a {
+        color: white;
+        font-weight: 600;
+    }
+    h1 {
+        font-size: 7rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    .slack-logo {
+        display: flex;
+        justify-content: space-between;
+    }
+    .slack-logo img {
+        align-self: center;
+    }
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        width: 45vw;
+        margin-left: 3rem;
+
+    }
+    .menu-buttons {
+        display: flex;
+        gap: 3rem;
+    }
+    .menu-buttons img {
+        width: 2rem;
+    }
+    .menu-buttons button:nth-child(2) {
+        display: none;
+    }
+    .signin {
+        display: flex;
+        gap: 3rem;
+    }
+    .signin li:nth-child(2) a {
+        padding: 1rem 2rem;
+        background-color: white;
+        text-transform: uppercase;
+        color: var(--purple);
+        border-radius: 0.5rem;
+    }
+    .landing {
+        max-width: 50%;
+    }
+    .landing p {
+        font-size: 2.6em;
+        padding-top: 5rem;
+    }
+    .companies {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .general-text {
+        width: 50vw;
+        font-size: 1.7rem;
+        line-height: 1.4;
+        padding: 1rem 8rem;
+    }
+    .general img {
+        width: 50vw;
+    }
+    .connectedness {
+        height: 30vh;
+        width: 50vw;
+        margin-top: 8vh;
+    }
+    .connectedness img {
+        display: none;
+    }
+    .block2 {
+        align-self: flex-end;
+        width: 50vw;
+        height: 30vh;
+        align-self: center;
+    }
+    .block2 img {
+        display: none;
+    }
+
+    .tools-img {
+        width: 50vw;
+        height: 30vh;
+        margin-top: 8vh;
+    }
+    .teams {
+        padding: 1rem 3rem;
+    }
+    .metrics {
+        justify-content: space-between;
+    }
+    .metrics li {
+        width: 20rem;
+    }
+    .welcome .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2.2rem;
+        height: auto;
+    }
+    .welcome button {
+        padding: 25px 50px;
+    }
+    .nav-links {
+        line-height: 3;
     }
 }
 
