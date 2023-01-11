@@ -145,7 +145,7 @@ button {
 }
 .teams {
     text-align: center;
-    min-width: 100vw;
+    width: 100vw;
 }
 .metrics {
     padding: 2rem 12rem;
@@ -410,13 +410,11 @@ footer {
 
 }
 
-@media (min-width: 1025px) and (max-width: 1440px){
-    body {
-        max-width: 1440px;
-    }
+@media (min-width: 1025px) {
+
     nav {
         justify-content: space-between;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         padding: 1rem;
     }
     nav a {
@@ -439,13 +437,13 @@ footer {
     .menu {
         display: flex;
         justify-content: space-between;
-        width: 45vw;
+        width: 40vw;
         margin-left: 3rem;
 
     }
     .menu-buttons {
         display: flex;
-        gap: 3rem;
+        gap: 2rem;
     }
     .menu-buttons img {
         width: 2rem;
@@ -455,10 +453,10 @@ footer {
     }
     .signin {
         display: flex;
-        gap: 3rem;
+        gap: 2.5rem;
     }
     .signin li:nth-child(2) a {
-        padding: 1rem 2rem;
+        padding: 1rem 1rem;
         background-color: white;
         text-transform: uppercase;
         color: var(--purple);
@@ -487,7 +485,7 @@ footer {
     .connectedness {
         height: 30vh;
         width: 50vw;
-        margin-top: 8vh;
+        margin: auto 0;
     }
     .connectedness img {
         display: none;
@@ -505,10 +503,11 @@ footer {
     .tools-img {
         width: 50vw;
         height: 30vh;
-        margin-top: 8vh;
+        margin: auto 0;
     }
     .teams {
         padding: 1rem 3rem;
+        width: 100vw;
     }
     .metrics {
         justify-content: space-between;
@@ -531,7 +530,39 @@ footer {
         line-height: 3;
     }
 }
+@media (min-width: 1025px) and (max-width: 1305) {
+    nav {
+        padding: 1rem 0.2rem;
+    }
+    .signin {
+        gap: 1rem;
+    }
+}
+@media (min-width: 1441px) {
+    nav {
+        font-size: 1.5rem;
+    }
+    .landing .buttons {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 12rem;
+        gap: 2rem;
+    }
+    .signup-email {
+        padding: 1rem 3rem;
+        font-size: 1.2rem;
+    }
+    .signup-google {
+        width: 22rem;
+        padding: 0.6rem 0.5rem;
+        font-size: 1.2rem;
+    }
+    .product img{
+        max-width: 30vw;
 
-@media (min-width: 1441px){
-
+    }
+    .signin li:nth-child(2) a {
+        padding: 1rem 2rem;
+    }
 }
