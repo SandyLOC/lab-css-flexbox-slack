@@ -20,6 +20,7 @@ footer links grey: #454245
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 nav {
     display: flex;
@@ -145,7 +146,7 @@ button {
 }
 .teams {
     text-align: center;
-    width: 100vw;
+    margin: 0 auto;
 }
 .metrics {
     padding: 2rem 12rem;
@@ -191,7 +192,7 @@ footer {
 }
 @media (max-width: 768px){
     body {
-        max-width: 48rem;
+        max-width: 768px;
     }
     nav {
 
@@ -257,7 +258,7 @@ footer {
     }
     .connectedness {
         background-image: url("../images/connectedness.png");
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
     }
     .connectedness img {
@@ -266,8 +267,7 @@ footer {
     .block2 {
         align-self: flex-end;
         background-image: url("../images/flexibility.png");
-        background-size: contain;
-        background-position: right;
+        background-size: cover;
         background-repeat: no-repeat;
     }
     .block2 img {
@@ -275,7 +275,7 @@ footer {
     }
     .tools-img {
         background-image: url("../images/speed.png");
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
     }
     .tools-img img {
@@ -377,9 +377,8 @@ footer {
     }
     .block2 {
         order: -1;
-        align-self: flex-end;
         width: 100vw;
-        height: 50vh;
+        height: 35rem;
     }
     .block2 img {
         display: none;
@@ -491,7 +490,6 @@ footer {
         display: none;
     }
     .block2 {
-        align-self: flex-end;
         width: 50vw;
         height: 30vh;
         align-self: center;
@@ -506,8 +504,9 @@ footer {
         margin: auto 0;
     }
     .teams {
+        margin: 0 auto;
         padding: 1rem 3rem;
-        width: 100vw;
+        width: 90vw;
     }
     .metrics {
         justify-content: space-between;
@@ -530,7 +529,10 @@ footer {
         line-height: 3;
     }
 }
-@media (min-width: 1025px) and (max-width: 1305) {
+@media (min-width: 1025px) and (max-width: 1305px) {
+    body {
+        max-width: 1305px;
+    }
     nav {
         padding: 1rem 0.2rem;
     }
